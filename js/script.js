@@ -1,5 +1,10 @@
+// const { active } = require("browser-sync");
+
 const titleClickHandler = function(event){
-    //target: <span>
+    /*TARGET:  <ul class="list tags">
+                    <li><a href="#">design</a> <span>(6)</span></li>
+    currentTarget: null
+    */
     const clickedElement = this;
     console.log(event);
     /* [DONE] remove class 'active' from all article links  */
@@ -8,8 +13,10 @@ const titleClickHandler = function(event){
         activeLink.classList.remove('active');
     }
     /* [IN DROGRESS] add class 'active' to the clicked link */
-
+    clickedElement.classList.add('active');
+    
     console.log('clickedElement', clickedElement);
+    console.log('clickedElement (with plus): ' + clickedElement);
     /* [DONE] remove class 'active' from all articles */
     const activeArticles = document.querySelectorAll('article.active');
 
