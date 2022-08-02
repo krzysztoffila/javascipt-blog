@@ -138,20 +138,9 @@ function generateAuthors() {
 
   /* get attribute from post-author  */
 
-  /* split tags into array */
-
-  /* START LOOP: for each tag */
-
-  /* generate HTML of the link */
-
-  /* add generated code to html variable */
-
-  /* END LOOP: for each tag */
-
-  /* insert HTML of all the links into the tags wrapper */
+  /* insert HTML of all the links into the post-author wrapper */
 
   /* END LOOP: for every article: */
 }
-
 
 generateAuthors();
