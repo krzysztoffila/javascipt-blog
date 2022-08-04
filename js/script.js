@@ -151,3 +151,16 @@ function generateAuthors() {
   }
 }
 generateAuthors();
+
+function addClickListenersToAuthors() {
+  /* find all links to tags */
+  const alllinksToTags = document.querySelectorAll('a[href^="#author-"]');
+  console.log(alllinksToTags);
+  /* START LOOP: for each link */
+  for (let link of alllinksToTags) {
+    /* add tagClickHandler as event listener for that link */
+    link.addEventListener('click', tagClickHandler);
+    /* END LOOP: for each link */
+  }
+}
+addClickListenersToAuthors();
