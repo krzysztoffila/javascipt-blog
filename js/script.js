@@ -59,6 +59,17 @@ for (let link of links) {
   link.addEventListener('click', titleClickHandler);
 }
 
+function calculateTagsParams(tags) {
+  const params = {
+    min: 0,
+    max: 999999,
+  };
+  for (let tag in tags) {
+    console.log(tag + ' is used ' + tags[tag] + ' times');
+  }
+  return params;
+}
+
 function generateTags() {
   /* [NEW] create a new variable allTags with an empty object */
   let allTags = {};
@@ -94,6 +105,8 @@ function generateTags() {
     /* END LOOP: for every article: */
     /* [NEW] find list of tags in right column */
     const tagList = document.querySelector(optTagsListSelector);
+    const tagsParams = calculateTagsParams(allTags);
+    console.log('tagsParams:', tagsParams);
     /* [NEW] create variable for all links HTML code */
     let allTagsHTML = '';
     /* [NEW] START LOOP: for each tag in allTags: */
