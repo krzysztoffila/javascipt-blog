@@ -119,3 +119,33 @@ body {
   }
 }
 
+/* TAGS */
+.tag-size-5 {
+  font-size: 30px;
+  color:96EFC4;
+}
+.tag-size-4 {
+  font-size: 28px;
+  color: 1FBFAF;
+}
+.tag-size-3 {
+  font-size: 26px;
+  color: AAEAB0;
+}
+.tag-size-2 {
+  font-size: 24px;
+  color: EDD3DE;
+}
+.tag-size-1 {
+  font-size : 22px;
+  color:EAB991;
+}
+.list.tags {
+  li {
+  display: inline;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
